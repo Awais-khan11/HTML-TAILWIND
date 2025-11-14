@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+
+  <header>
+    <!-- First sticky offer card -->
+    <div class="sticky-offer-card fixed top-0 left-0 right-0 z-50 bg-[#92400E]">
+      <div
+        class="max-w-screen-xl mx-auto flex items-center justify-center h-16 text-white text-lg sm:text-xl md:text-2xl cursor-pointer text-center px-4">
+        🎊 TODAY ONLY – GET 80% OFF + 2 Free Gifts – Limited Time! 🎊
+      </div>
+    </div>
+
+    <!-- Second sticky offer card -->
+    <div class="limitted-offer-card fixed top-16 left-0 right-0 z-50 bg-[#006241]">
+      <div
+        class="max-w-screen-xl mx-auto flex items-center justify-center h-16 text-white text-sm sm:text-base md:text-xl text-center px-4">
+        <span class="font-bold">Just $37 (Reg. $149) | Over 50,000 Copies Sold | Ships in 3-5 Days</span>
+      </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="h-32"></div>
+  </header>
+
+
+
+  <section class="banner-section bg-[#F0F9F6] w-full min-h-[calc(100vh-8rem)] flex flex-col justify-start text-white">
+    <div class="container mx-auto">
+
+      <!-- Ancient Image -->
+      <div class="w-[35%] sm:w-[25%] md:w-[12%] h-auto mb-5 mx-auto">
+        <img src="ancient.png" alt="ancient image" class="w-full h-full object-contain pt-5">
+      </div>
+
+      <!-- Main Flex Container -->
+      <div class="flex flex-col md:flex-row w-full">
+
+        <!-- Left Image -->
+        <div class="md:w-[48%] flex justify-center items-start xl:pl-24 2xl:pl-24  md:pr-6 lg:pl-6 mb-6 md:mb-0">
+          <div class="relative">
+            <img src="section.png" alt="section-image" class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg">
+            <span
+              class="absolute -top-3 -left-3 font-bold text-white bg-[#006241] px-2 py-2 rounded-xl shadow text-sm sm:text-base md:text-lg">
+              BESTSELLER
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="md:w-[52%] w-full flex flex-col m:ml-24 text-black mr-0 md:mr-24">
+
+          <div class="w-[90%]">
+            <span class="flex items-center mb-2">
+              <img src="batch.png" class="h-5 w-20" alt="badge">
+              <span class="ml-2 text-sm sm:text-base md:text-base">TRUSTED BY 50,000+ HAPPY CUSTOMERS</span>
+            </span>
+
+            <!-- Heading -->
+            <p class="font-bold leading-tight text-2xl sm:text-3xl md:text-4xl">
+              The $37 Handbook That’s Helping People Over 50 Sleep Better, Hurt Less, and Feel Like Themselves Again
+            </p>
+
+            <!-- Paragraph -->
+            <p class="mt-4 sm:mt-5 text-base sm:text-xl md:text-2xl opacity-90">
+              Discover 100+ Proven, Precision Herbal Recipes Using Ingredients You Already Have — Like Garlic, Ginger,
+              Lemon &amp; More — Backed by Science, Loved by 50,000+, and Delivered Straight to Your Door
+            </p>
+
+            <!-- Tick List 1 -->
+            <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+              <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+              <p class="m-0"><span class="font-medium">Real Relief for Real Problems:</span> Pain, Fatigue, Blood Sugar,
+                Brain Fog &</p>
+            </span>
+            <span class="ml-[1.8rem] text-sm sm:text-base md:text-lg">More</span>
+
+            <!-- Tick List 2 -->
+            <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+              <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+              <p class="m-0"><span class="font-medium">Step-by-Step Healing Recipes</span> Using Kitchen Staples You
+                Already Have</p>
+            </span>
+
+            <!-- Tick List 3 -->
+            <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+              <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+              <p class="m-0">90+ Spiral-Bound Pages of <span class="font-medium">Proven Herbal Combinations That
+                  Actually</span></p>
+            </span>
+            <span class="ml-[1.8rem] font-medium text-sm sm:text-base md:text-lg">More</span>
+
+            <!-- Tick List 4 -->
+            <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+              <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+              <p class="m-0 font-medium">Includes 2 FREE Bonuses + 60-Day Money-Back Guarantee</p>
+            </span>
+
+            <!-- Button -->
+            <a href="#next-step"
+  class="mt-4 sm:mt-5 md:mt-5 theme-primary-btn w-full inline-flex items-center justify-center gap-2 whitespace-nowrap 
+  bg-[#006241] text-white font-bold 
+  text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl
+  px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 rounded-md border-2 shadow-lg">
+  YES — UNLOCK MY REMEDIES NOW!
+</a>
+
+
+
+            <!-- User Avatars -->
+            <div class="mt-3 user-content-wrapper flex items-center justify-center sm:justify-start">
+              <div class="flex -space-x-2 grow-0">
+                <div class="user-image w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img alt="Customer" loading="lazy"
+                    src="https://img.funnelish.com/20896/775227/1744269671-review01.png">
+                </div>
+                <div class="user-image w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img alt="Customer" loading="lazy"
+                    src="https://img.funnelish.com/20896/688435/1736901340-c8cc71c0-ce45-467b-be6a-5bc9a49385b5.jpg">
+                </div>
+                <div class="user-image w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img alt="Customer" loading="lazy"
+                    src="https://img.funnelish.com/20896/775227/1744273360-j05%20reviews.png">
+                </div>
+                <div class="user-image w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img alt="Customer" loading="lazy"
+                    src="https://img.funnelish.com/20896/715355/1738912267-2651b380-d292-48de-85a9-494521d3e8bd.jpeg">
+                </div>
+              </div>
+              <span class="ml-2 join-text text-sm sm:text-base md:text-base">Trusted by 50,000+ Natural Health
+                Customers</span>
+            </div>
+          </div>
+          <!-- Badge -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--2ND SECTION ================================================================================================== -->
+
+
+  <section class="min-h-screen">
+    <div class="w-full bg-gradient-to-b from-[#F0F9F6] to-[#FFFFFF] ">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md p-8 text-center border border-gray-200 hover:border-green-200 ">
+          <img src="/assests/cardimg1.png" class="w-28  mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Try It for 60 Days, Risk-Free</h3>
+          <p class="text-gray-600 text-sm">
+            If you don't feel better, clearer, or more in control of your health, send it back.
+            No questions, no hassle.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 text-center border border-gray-200 hover:border-green-200">
+          <img src="assests/cardimg2.png" class="w-28 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Printed in the USA & Delivered in 3-5 Days</h3>
+          <p class="text-gray-600 text-sm">
+            So you can start feeling better, sleeping deeper, and healing naturally… fast.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 text-center border border-gray-200 hover:border-green-200">
+          <img src="assests/cardimg3.png" class="w-28 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">100+ Proven Remedies with Kitchen Ingredients</h3>
+          <p class="text-gray-600 text-sm">
+            Used by 50,000+ people over 50 to relieve pain, boost energy, and take control — naturally.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-5 md:mb-8 lg:mb-10 mt-20">What You’ll Unlock Inside The
+      Natural Healing Handbook</h2>
+
+
+    <div class="container mx-auto">
+
+
+      <!-- Main Flex Container -->
+      <div class="flex flex-col md:flex-row w-full">
+
+        <!-- Left Image -->
+        <div class="md:w-1/2 flex justify-center items-start pl-6 md:pl-24 mb-6 md:mb-0">
+          <div class="">
+            <img src="/assests/handbook.png" alt="section-image"
+              class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg">
+
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="md:w-[40%] w-full flex flex-col text-black mr-0 md:mr-24">
+
+
+
+          <!-- Tick List 1 -->
+          <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+            <img src="icons8-tick-48.png" class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+            <p class="m-0 font-light text-gray-700">
+              <span class="font-bold text-gray-900">Ancient Remedies, Modern Results</span> <br>
+              Learn how to combine everyday herbs like garlic, lemon, mint and more into precision formulas that help
+              ease pain, calm inflammation, and restore energy — without harsh side effects.
+            </p>
+          </span>
+
+
+          <!-- Tick List 2 -->
+          <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+            <img src="icons8-tick-48.png" class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+            <p class="m-0 font-light text-gray-700">
+              <span class="font-bold text-gray-900">Fix What's Really Wrong</span> <br>
+              Target the root causes of joint pain, fatigue, poor sleep, and blood sugar swings with step-by-step herbal
+              recipes using ingredients already in your kitchen.
+            </p>
+          </span>
+
+          <!-- Tick List 3 -->
+          <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+            <img src="icons8-tick-48.png" class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+            <p class="m-0 font-light text-gray-700">
+              <span class="font-bold text-gray-900">Build Daily Healing Habits That Stick</span> <br>
+              Create simple, calming rituals that fit into your day — and leave you sleeping better, digesting smoother,
+              and waking up clear-headed and strong.
+            </p>
+          </span>
+          <!-- Tick List 4 -->
+          <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+            <img src="icons8-tick-48.png" class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+            <p class="m-0 font-light text-gray-700">
+              <span class="font-bold text-gray-900">Know What Supplements Work — and Which Are a Waste</span> <br>
+              Cut through the noise with expert-backed guidance on the few natural supplements that actually work — with
+              exact doses and how to use them safely.
+            </p>
+          </span>
+          <!-- Tick List 5 -->
+          <span class="flex items-start gap-2 mt-2 text-sm sm:text-base md:text-lg">
+            <img src="icons8-tick-48.png" class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+            <p class="m-0 font-light text-gray-700">
+              <span class="font-bold text-gray-900">Time-Tested Remedies, Not Silly Trends</span> <br>
+              The recipes in this book are drawn from centuries of herbal wisdom and backed by modern insights — so
+              you’re not chasing fads, but following proven principles of natural healing.
+            </p>
+          </span>
+
+          <!-- Button -->
+          <a href="#next-step"
+            class="mt-4 sm:mt-5 md:mt-5 theme-primary-btn inline-flex flex-col items-center justify-center  bg-[#006241] text-white font-bold text-base sm:text-lg md:text-xl px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-md border-2 shadow-lg text-center">
+            <span>GET THE NATURAL</span>
+            <span>HEALING HANDBOOK TODAY?</span>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 3RD SECTION============================================================================= -->
+
+  <section class="min-h-[75vh]">
+  <div class="container mx-auto mt-10 px-4 md:px-0">
+    <!-- Main Flex Container with swapped positions -->
+    <div class="flex flex-col md:flex-row w-full">
+
+      <!-- Right Content (now on left for desktop) -->
+      <div class="md:w-[50%] w-full flex flex-col text-black text-start ms-4 sm:ms-10 md:ms-24 me-0 md:me-24 order-2 md:order-1">
+
+        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          You've Been Using These Herbs All Wrong…
+        </h1>
+
+        <p class="text-gray-700 font-light mt-6 text-sm sm:text-base md:text-lg">
+          Small tweaks. Big payoffs. These everyday ingredients hold healing
+          powers…if you know how to unlock them.
+        </p>
+
+        <!-- Tick Item -->
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Garlic's 15-Minute Power-Up</span> <br>
+            The one prep step that supercharges garlic’s impact…
+          </p>
+        </span>
+
+        <!-- Repeat Tick Items -->
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Turmeric Trap</span> <br>
+            Why taking turmeric alone is almost useless…
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Backyard Painkiller</span> <br>
+            This common weed can quiet joint pain fast…
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Herbal Sleep Switch</span> <br>
+            A 2-herb combo that flips your nervous system…
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg mb-5">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Synergy Secret for Pain</span> <br>
+            Pairing two herbs creates relief that rivals OTC meds…
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Spice Elixirs That Heal</span> <br>
+            Cinnamon + lemon + oil = a healing tonic that boosts immunity,energy,and digestion
+          </p>
+        </span>
+
+      </div>
+
+      <!-- Left Image (now on right for desktop) -->
+      <div class="md:w-1/2 flex items-start justify-center md:justify-start me-0 md:me-24 mb-6 md:mb-0 order-1 md:order-2">
+        <div>
+          <img src="/assests/herb.jpg"
+            alt="section-image"
+            class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg object-cover">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =======================SECTION 4======================================================== -->
+
+
+<section class="min-h-[80vh] mt-4">
+  <div class="container mx-auto">
+
+    <!-- Main Flex Container -->
+    <div class="flex flex-col md:flex-row w-full gap-6 md:gap-10">
+
+      <!-- Left Image -->
+      <div class="md:w-1/2 flex justify-center items-start pl-6 md:pl-24 mb-6 md:mb-0">
+        <div class="">
+          <img src="/assests/pills.webp" alt="section-image"
+            class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg">
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="md:w-[40%] w-full flex flex-col text-black mr-0 md:mr-24">
+        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          Still Chasing Pills...While Your Real Problems Get Worse?
+        </h1>
+
+        <p class="mt-10">You mask the symptoms. But what if the root cause is quietly getting worse?</p>
+
+        <!-- Tick List 1 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Delay = Damage</span> <br>
+            That nagging ache in your back or knees? It’s not “just age.” It’s inflammation — and it’s quietly fueling arthritis, fatigue, and organ stress. Wait too long, and it won’t be reversible.
+          </p>
+        </span>
+
+        <!-- Tick List 2 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Brain Fog Isn’t Normal</span> <br>
+            Losing focus? Can’t find the right word? These are early warnings — not quirks of getting older. Your body’s balance is off, and it’s begging you to notice.
+          </p>
+        </span>
+
+        <!-- Tick List 3 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">One Pill Leads to Another</span> <br>
+            Start with painkillers…add sleep aids…then blood pressure meds. Each one stacks side effects — dizziness, fatigue, gut issues — until you’re stuck “treating the treatment.”
+          </p>
+        </span>
+
+        <!-- Tick List 4 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Break the Cycle, Naturally</span> <br>
+            What if ginger calmed your pain? Lemon soothed your digestion? And deep, natural sleep came without a single prescription? That cycle starts here.
+          </p>
+        </span>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================SECTION 5======================================================= -->
+
+<section class="min-h-[75vh]">
+  <div class="container mx-auto mt-6 px-4 md:px-0">
+    <!-- Main Flex Container with swapped positions -->
+    <div class="flex flex-col md:flex-row w-full">
+
+      <!-- Right Content (now on left for desktop) -->
+      <div class="md:w-[50%] w-full flex flex-col text-black text-start ms-4 sm:ms-10 md:ms-24 me-0 md:me-24 order-2 md:order-1">
+
+        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          The Natural Way to Finally Feel Like You Again
+        </h1>
+
+        <p class="text-gray-700 font-light mt-6 text-sm sm:text-base md:text-lg">
+          Tired of constantly popping pills and still feeling “off”? This isn’t another band-aid. It’s a breakthrough…and it starts in your kitchen.
+        </p>
+
+        <!-- Tick Item -->
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Secret Is Synergy</span> <br>
+            Used alone, herbs can help. But pair the right ones and their healing power multiplies — 5x, 10x, even 20x. That’s what most remedies miss.
+          </p>
+        </span>
+
+        <!-- Repeat Tick Items -->
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">No Gadgets. No Guessing.</span> <br>
+            These step-by-step recipes use what you already have: like garlic, turmeric, cinnamon, lemon and other common ingredients. Nothing exotic. Nothing complicated.
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Relief Where It Matters Most</span> <br>
+            This common weed can quiet joint pain fast…From joint pain to brain fog, poor sleep to low energy, these formulas target the root cause, not just symptoms.
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">The Herbal Sleep Switch</span> <br>
+            A 2-herb combo that flips your nervous system… 
+          </p>
+        </span>
+
+        <span class="flex items-start gap-2 mt-6 text-sm sm:text-base md:text-lg mb-5">
+          <img src="icons8-tick-48.png" class="h-4 w-4 sm:h-5 sm:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">You,re Not Broken — Just Under-Supported</span> <br>
+          Your body isn't failing. It's asking for help. This is how you start giving it — naturally, safely, and powerfully.
+          </p>
+        </span>
+
+        <a href="#next-step"
+            class="mt-4 sm:mt-5 md:mt-5 theme-primary-btn inline-flex flex-col items-center justify-center  bg-[#006241] text-white font-bold text-base sm:text-lg md:text-xl px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-md border-2 shadow-lg text-center">
+            <span>GET THE NATURAL</span>
+            <span>HEALING HANDBOOK TODAY?</span>
+          </a>
+
+
+      </div>
+
+      <!-- Left Image (now on right for desktop) -->
+      <div class="md:w-1/2 flex items-start justify-center md:justify-start me-0 md:me-24 mb-6 md:mb-0 order-1 md:order-2">
+        <div>
+          <img src="/assests/Natural.webp"
+            alt="section-image"
+            class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg object-cover">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================section 6========================================== -->
+
+<section class="min-h-[70vh] mt-4">
+  <div class="container mx-auto">
+
+    <!-- Main Flex Container -->
+    <div class="flex flex-col md:flex-row w-full gap-6 md:gap-10">
+
+      <!-- Left Image -->
+      <div class="md:w-1/2 flex justify-center items-start pl-6 md:pl-24 mb-6 md:mb-0">
+        <div class="">
+          <img src="/assests/book.jpg" alt="section-image"
+            class="max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] rounded-lg">
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="md:w-[40%] w-full flex flex-col text-black mr-0 md:mr-24">
+        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          Why Thousands Trust This Book Over Pills, Googling, or Guesswork
+        </h1>
+
+        
+
+        <!-- Tick List 1 -->
+        <span class="flex items-start gap-2 mt-10 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Everything's Organized by Ailment</span> <br>
+            No sifting through chapters. Flip right to digestion, sleep, pain relief, or whatever you need.
+          </p>
+        </span>
+
+        <!-- Tick List 2 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Exact Herbs. Exact Dosages.</span> <br>
+            No guessing and no filler — you get the best combo for each condition, already tested and proven.
+          </p>
+        </span>
+
+        <!-- Tick List 3 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Zero Research Rabbit Holes</span> <br>
+           Stop bouncing between blog posts and supplements. This is everything in one place, already vetted.
+          </p>
+        </span>
+
+        <!-- Tick List 4 -->
+        <span class="flex items-start gap-2 mt-4 text-sm sm:text-base md:text-lg">
+          <img src="icons8-tick-48.png"
+            class="h-5 w-5 sm:h-5 sm:w-5 md:h-5 md:w-5 mt-1" alt="tick">
+          <p class="m-0 font-light text-gray-700">
+            <span class="font-bold text-gray-900">Natural, Not Naive</span> <br>
+            Every recipe uses safe herbs with real scientific backing — no woo-woo, no wishful thinking.
+          </p>
+        </span>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =======================SECTION 7================================================================ -->
+
+<section class="min-h-[50vh] border">
+
+  <p class="text-center">What Makes The Natural Healing Handbook Special?</p>
+  <p class="text-center ">A comprehensive guide that combines ancient wisdom with modern insights to help <br>you naturally support your health, vitality, and balance—without relying solely on<br>conventional solutions.</p>
+
+</section>
+
+
+</body>
+
+</html>
